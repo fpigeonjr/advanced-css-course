@@ -19,11 +19,11 @@ const StyledHeader = styled.header`
 
   .logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
   }
   .logo {
-    height: 35px;
+    height: 3.5rem;
   }
 
   .text-box {
@@ -38,14 +38,14 @@ const StyledHeader = styled.header`
     color: #ffffff;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
   }
 
   .heading-primary-main {
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -55,19 +55,19 @@ const StyledHeader = styled.header`
   }
   .heading-primary-sub {
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
+    letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out;
   }
 
   @keyframes moveInLeft {
     0% {
       opacity: 0;
-      transform: translateX(-100px);
+      transform: translateX(-10rem);
     }
     80% {
-      transform: translateX(10px);
+      transform: translateX(1rem);
     }
     100% {
       opacity: 1;
@@ -77,10 +77,10 @@ const StyledHeader = styled.header`
   @keyframes moveInRight {
     0% {
       opacity: 0;
-      transform: translateX(100px);
+      transform: translateX(10rem);
     }
     80% {
-      transform: translateX(-10px);
+      transform: translateX(-1rem);
     }
     100% {
       opacity: 1;

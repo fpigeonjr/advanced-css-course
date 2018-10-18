@@ -5,15 +5,16 @@ export const Button = styled.a`
   :visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
+    font-size: 1.6rem;
   }
   :hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 2);
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0;
@@ -22,17 +23,15 @@ export const Button = styled.a`
 
   :active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 2);
   }
-  ::before {
-    content: "🚀";
-  }
+
   ::after {
     content: "";
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -43,7 +42,7 @@ export const Button = styled.a`
   @keyframes moveInButton {
     0% {
       opacity: 0;
-      transform: translateY(30px);
+      transform: translateY(3rem);
     }
 
     100% {
