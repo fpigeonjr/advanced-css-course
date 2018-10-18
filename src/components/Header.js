@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Hero from "../resources/img/hero.jpg";
 import LogoWhite from "../resources/img/logo-white.png";
+import { ButtonWhite } from "./Button";
 
 const StyledHeader = styled.header`
   height: 95vh;
@@ -30,12 +31,14 @@ const StyledHeader = styled.header`
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
   }
 
   .heading-primary {
     color: #ffffff;
     text-transform: uppercase;
     backface-visibility: hidden;
+    margin-bottom: 60px;
   }
 
   .heading-primary-main {
@@ -97,6 +100,7 @@ const Header = () => {
           <span className="heading-primary-main">Outdoors</span>
           <span className="heading-primary-sub">is where life happens</span>
         </h1>
+        <ButtonWhite href="#">Discover our tours</ButtonWhite>
       </div>
     </StyledHeader>
   );
