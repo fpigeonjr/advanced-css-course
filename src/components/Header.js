@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Hero from "../resources/img/hero.jpg";
 import LogoWhite from "../resources/img/logo-white.png";
-import { ButtonWhite } from "./Button";
+import { ButtonAnimated } from "./Button";
 
 const StyledHeader = styled.header`
   height: 95vh;
@@ -100,7 +100,7 @@ const Header = () => {
           <span className="heading-primary-main">Outdoors</span>
           <span className="heading-primary-sub">is where life happens</span>
         </h1>
-        <ButtonWhite href="#">Discover our tours</ButtonWhite>
+        <ButtonAnimated href="#">Discover our tours</ButtonAnimated>
       </div>
     </StyledHeader>
   );
