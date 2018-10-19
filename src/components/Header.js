@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Hero from "../resources/img/hero.jpg";
 import LogoWhite from "../resources/img/logo-white.png";
-import { ButtonAnimated } from "./Button";
+import { ButtonWhiteAnimated } from "./Button";
 
 const StyledHeader = styled.header`
   height: 95vh;
@@ -17,16 +17,16 @@ const StyledHeader = styled.header`
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 
-  .logo-box {
+  .header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
   }
-  .logo {
+  .header__logo {
     height: 3.5rem;
   }
 
-  .text-box {
+  .header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -41,7 +41,7 @@ const StyledHeader = styled.header`
     margin-bottom: 6rem;
   }
 
-  .heading-primary-main {
+  .heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -53,7 +53,7 @@ const StyledHeader = styled.header`
       animation-iteration-count: 3;
      */
   }
-  .heading-primary-sub {
+  .heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -92,15 +92,15 @@ const StyledHeader = styled.header`
 const Header = () => {
   return (
     <StyledHeader>
-      <div className="logo-box">
-        <img src={LogoWhite} alt="logo" className="logo" />
+      <div className="header__logo-box">
+        <img src={LogoWhite} alt="logo" className="header__logo" />
       </div>
-      <div className="text-box">
+      <div className="header__text-box">
         <h1 className="heading-primary">
-          <span className="heading-primary-main">Outdoors</span>
-          <span className="heading-primary-sub">is where life happens</span>
+          <span className="heading-primary--main">Outdoors</span>
+          <span className="heading-primary--sub"> is where life happens</span>
         </h1>
-        <ButtonAnimated href="#">Discover our tours</ButtonAnimated>
+        <ButtonWhiteAnimated href="#">Discover our tours</ButtonWhiteAnimated>
       </div>
     </StyledHeader>
   );

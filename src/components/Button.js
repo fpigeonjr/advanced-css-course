@@ -60,7 +60,7 @@ export const ButtonWhite = styled(Button)`
   }
 `;
 
-export const ButtonAnimated = styled(ButtonWhite)`
+export const ButtonWhiteAnimated = styled(ButtonWhite)`
   animation: moveInButton 0.5s ease-out 0.75;
   animation-fill-mode: backwards;
 `;
