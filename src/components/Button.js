@@ -14,7 +14,7 @@ export const Button = styled.a`
   }
   :hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 2);
+    box-shadow: 0 1rem 2rem ${props => props.theme.colorTranslucentBlack};
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0;
@@ -23,7 +23,7 @@ export const Button = styled.a`
 
   :active {
     transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 2);
+    box-shadow: 0 0.5rem 1rem ${props => props.theme.colorTranslucentBlack};
   }
 
   ::after {
@@ -53,10 +53,10 @@ export const Button = styled.a`
 `;
 
 export const ButtonWhite = styled(Button)`
-  background-color: #ffffff;
-  color: #777777;
+  background-color: ${props => props.theme.colorWhite};
+  color: ${props => props.theme.colorGreyDark};
   ::after {
-    background-color: #ffffff;
+    background-color: ${props => props.theme.colorWhite};
   }
 `;
 

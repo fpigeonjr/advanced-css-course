@@ -8,8 +8,8 @@ const StyledHeader = styled.header`
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba(126, 213, 111, 0.8),
-      rgba(40, 180, 133, 0.8)
+      ${props => props.theme.colorPrimaryLightTranslucent},
+      ${props => props.theme.colorPrimaryDarkTranslucent}
     ),
     url(${Hero});
   background-size: cover;
@@ -35,7 +35,7 @@ const StyledHeader = styled.header`
   }
 
   .heading-primary {
-    color: #ffffff;
+    color: ${props => props.theme.colorTextLight}
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem;
