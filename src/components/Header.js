@@ -4,7 +4,7 @@ import Hero from "../resources/img/hero.jpg";
 import LogoWhite from "../resources/img/logo-white.png";
 import { ButtonWhiteAnimated } from "./Button";
 
-const StyledHeader = styled.header`
+const StyledHeader = styled.header.attrs({ className: "header" })`
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
@@ -32,33 +32,6 @@ const StyledHeader = styled.header`
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-
-  .heading-primary {
-    color: ${props => props.theme.colorTextLight}
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 6rem;
-  }
-
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    /* animation-delay: 3s;
-      animation-iteration-count: 3;
-     */
-  }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-out;
   }
 
   @keyframes moveInLeft {
@@ -89,6 +62,30 @@ const StyledHeader = styled.header`
   }
 `;
 
+const HeadingPrimary = styled.h1`
+  color: ${props => props.theme.colorTextLight};
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out;
+  }
+`;
+
 const Header = () => {
   return (
     <StyledHeader>
@@ -96,10 +93,10 @@ const Header = () => {
         <img src={LogoWhite} alt="logo" className="header__logo" />
       </div>
       <div className="header__text-box">
-        <h1 className="heading-primary">
+        <HeadingPrimary className="heading-primary">
           <span className="heading-primary--main">Outdoors</span>
           <span className="heading-primary--sub"> is where life happens</span>
-        </h1>
+        </HeadingPrimary>
         <ButtonWhiteAnimated href="#">Discover our tours</ButtonWhiteAnimated>
       </div>
     </StyledHeader>
