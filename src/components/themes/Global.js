@@ -22,6 +22,14 @@ const GlobalStyle = createGlobalStyle`
     padding: 3rem;
     box-sizing: border-box;
   }
+
+  .clearfix {
+    &::after{
+      content:"";
+      display: table;
+      clear: both;
+    }
+  }
 `;
 
 export default GlobalStyle;
