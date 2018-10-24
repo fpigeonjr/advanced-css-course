@@ -10,7 +10,7 @@ export const Button = styled.a`
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
-    font-size: 1.6rem;
+    font-size: ${props => props.theme.defaultFontSize};
   }
   :hover {
     transform: translateY(-3px);
@@ -63,4 +63,27 @@ export const ButtonWhite = styled(Button)`
 export const ButtonWhiteAnimated = styled(ButtonWhite)`
   animation: moveInButton 0.5s ease-out 0.75;
   animation-fill-mode: backwards;
+`;
+
+export const ButtonText = styled.a`
+  &:link,
+  &:visited {
+    font-size: ${props => props.theme.defaultFontSize};
+    color: ${props => props.theme.colorPrimary};
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid ${props => props.theme.colorPrimary};
+    padding: 3px;
+    transition: all 0.2s;
+  }
+  &:hover {
+    background-color: ${props => props.theme.colorPrimary};
+    color: ${props => props.theme.colorWhite};
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem ${props => props.theme.colorTranslucentBlack};
+  }
+  &:active {
+    box-shadow: 0 0.5rem 1rem ${props => props.theme.colorTranslucentBlack};
+    transform: translateY(0);
+  }
 `;

@@ -9,12 +9,18 @@ const Utilities = createGlobalStyle`
   }
 }
 
-.u-center-text{
+.u-center-text {
   text-align: center;
 }
 
-.u-margin-bottom-8{
+.u-margin-bottom-big {
   margin-bottom: 8rem;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
 }
 `;
 export default Utilities;

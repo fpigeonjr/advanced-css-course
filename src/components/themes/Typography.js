@@ -20,6 +20,19 @@ const Typography = createGlobalStyle`
   }
 
   }
+
+  .heading-tertiary{
+    font-size: ${props => props.theme.defaultFontSize};
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .paragraph{ 
+    font-size: ${props => props.theme.defaultFontSize};
+    &:not(:last-child){
+      margin-bottom: 3rem;
+    }
+  }
 `;
 
 export default Typography;
