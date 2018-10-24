@@ -1,15 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const Row = styled.div.attrs({ className: "clearfix" })`
+export const Row = styled.div.attrs({ className: "clearfix" })`
   max-width: ${props => props.theme.gridWidth};
-  background-color: ${props => props.theme.colorGreyLight};
   margin: 0 auto;
   &:not(:last-child) {
     margin-bottom: ${props => props.theme.gutterVertical};
   }
   [class^="col-"] {
-    background-color: orangered;
     float: left;
 
     &:not(:last-child) {
@@ -18,7 +16,7 @@ const Row = styled.div.attrs({ className: "clearfix" })`
   }
 `;
 
-const Col1of2 = styled.div`
+export const Col1of2 = styled.div`
   width: calc((100% - ${props => props.theme.gutterHorizontal}) / 2);
 `;
 

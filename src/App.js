@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import { ThemeProvider } from "styled-components";
 import MainTheme from "./components/themes/Main";
 import GlobalStyle from "./components/themes/Global";
-import Grid from './components/Grid'
+import About from "./components/About";
 
 class App extends Component {
   render() {
@@ -12,7 +12,9 @@ class App extends Component {
         <div className="App">
           <GlobalStyle />
           <Header />
-          <Grid />
+          <main>
+            <About />
+          </main>
         </div>
       </ThemeProvider>
     );
