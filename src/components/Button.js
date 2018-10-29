@@ -83,7 +83,7 @@ export const ButtonText = styled.a`
     box-shadow: 0 1rem 2rem ${props => props.theme.colorTranslucentBlack};
   }
   &:active {
-    box-shadow: 0 0.5rem 1rem ${props => props.theme.colorTranslucentBlack};
+    box-shadow: 0 0.5rem 1rmem ${props => props.theme.colorTranslucentBlack};
     transform: translateY(0);
   }
 `;

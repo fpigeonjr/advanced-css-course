@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Row, Col1of2 } from "./Grid";
 import { ButtonText } from "./Button";
+import Composition from "./Composition";
 
 const SectionAbout = styled.div`
   background-color: ${props => props.theme.colorGreyLight1};
@@ -39,7 +40,9 @@ const About = () => {
           </p>
           <ButtonText href="#">Learn More &rang;</ButtonText>
         </Col1of2>
-        <Col1of2 className="col-1-of-2">Image Composition</Col1of2>
+        <Col1of2 className="col-1-of-2">
+          <Composition />
+        </Col1of2>
       </Row>
     </SectionAbout>
   );
